@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace АнализГрафиков
 {
-    public partial class с_ГлавнаяФорма : Form
+    public partial class c_ГлавнаяФорма : Form
     {
-        public с_ГлавнаяФорма()
+        public c_ГлавнаяФорма()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
+
     }
 }

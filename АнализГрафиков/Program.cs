@@ -16,7 +16,7 @@ namespace АнализГрафиков
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new с_ГлавнаяФорма());
+            Application.Run(new c_ГлавнаяФорма());
         }
     }
 }
