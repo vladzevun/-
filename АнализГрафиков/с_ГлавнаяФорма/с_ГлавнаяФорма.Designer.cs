@@ -42,19 +42,19 @@ namespace АнализГрафиков
             this.c_ИсследовательГрафиков1.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.c_ИсследовательГрафиков1.MinimumSize = new System.Drawing.Size(1081, 588);
             this.c_ИсследовательГрафиков1.Name = "c_ИсследовательГрафиков1";
-            this.c_ИсследовательГрафиков1.Size = new System.Drawing.Size(1081, 588);
+            this.c_ИсследовательГрафиков1.Size = new System.Drawing.Size(1186, 588);
             this.c_ИсследовательГрафиков1.TabIndex = 0;
             // 
             // c_ГлавнаяФорма
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1092, 604);
+            this.ClientSize = new System.Drawing.Size(1200, 604);
             this.Controls.Add(this.c_ИсследовательГрафиков1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.MinimumSize = new System.Drawing.Size(859, 535);
             this.Name = "c_ГлавнаяФорма";
-            this.Text = "Анализ Графиков";
+            this.Text = "Редакция истории";
             this.ResumeLayout(false);
             this.PerformLayout();
 

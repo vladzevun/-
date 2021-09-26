@@ -68,7 +68,45 @@
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="c_ЛистТочек\c_ЛистТочек.cs" />
+    <Compile Include="c_Сегмент\c_Сегмент.cs" />
     <Compile Include="c_Серия\c_Серия.cs" />
+    <Compile Include="c_СписокСегментов\c_СписокСегментов.cs" />
+    <Compile Include="Окна\c_ОкноВыбораДаты\c_ОкноВыбораДаты.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Окна\c_ОкноВыбораДаты\c_ОкноВыбораДаты.Designer.cs">
+      <DependentUpon>c_ОкноВыбораДаты.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Окна\c_ОкноДвойныхБаров\c_ОкноДвойныхБаров.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Окна\c_ОкноДвойныхБаров\c_ОкноДвойныхБаров.Designer.cs">
+      <DependentUpon>c_ОкноДвойныхБаров.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Окна\c_ОкноИзменитьПараметр\c_ОкноИзменитьПараметр.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Окна\c_ОкноИзменитьПараметр\c_ОкноИзменитьПараметр.Designer.cs">
+      <DependentUpon>c_ОкноИзменитьПараметр.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Окна\c_ОкноПоискаВременныхСдвигов\c_ОкноПоисковВременныхСдвиго.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Окна\c_ОкноПоискаВременныхСдвигов\c_ОкноПоисковВременныхСдвиго.Designer.cs">
+      <DependentUpon>c_ОкноПоисковВременныхСдвиго.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Окна\c_ОкноПоискаГепов\c_ОкноПоискаГепов.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Окна\c_ОкноПоискаГепов\c_ОкноПоискаГепов.Designer.cs">
+      <DependentUpon>c_ОкноПоискаГепов.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Окна\c_ОкноПоискАномальныхБаров\c_ОкноПоискАномальныхБаров.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Окна\c_ОкноПоискАномальныхБаров\c_ОкноПоискАномальныхБаров.Designer.cs">
+      <DependentUpon>c_ОкноПоискАномальныхБаров.cs</DependentUpon>
+    </Compile>
     <Compile Include="с_ГлавнаяФорма\с_ГлавнаяФорма.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +127,24 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Окна\c_ОкноВыбораДаты\c_ОкноВыбораДаты.resx">
+      <DependentUpon>c_ОкноВыбораДаты.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Окна\c_ОкноДвойныхБаров\c_ОкноДвойныхБаров.resx">
+      <DependentUpon>c_ОкноДвойныхБаров.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Окна\c_ОкноИзменитьПараметр\c_ОкноИзменитьПараметр.resx">
+      <DependentUpon>c_ОкноИзменитьПараметр.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Окна\c_ОкноПоискаВременныхСдвигов\c_ОкноПоисковВременныхСдвиго.resx">
+      <DependentUpon>c_ОкноПоисковВременныхСдвиго.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Окна\c_ОкноПоискаГепов\c_ОкноПоискаГепов.resx">
+      <DependentUpon>c_ОкноПоискаГепов.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Окна\c_ОкноПоискАномальныхБаров\c_ОкноПоискАномальныхБаров.resx">
+      <DependentUpon>c_ОкноПоискАномальныхБаров.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="с_ГлавнаяФорма\с_ГлавнаяФорма.resx">
       <DependentUpon>с_ГлавнаяФорма.cs</DependentUpon>
     </EmbeddedResource>

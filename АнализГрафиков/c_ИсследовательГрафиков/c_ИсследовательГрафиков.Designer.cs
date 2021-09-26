@@ -42,14 +42,12 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.ob_СекПарам = new System.Windows.Forms.NumericUpDown();
             this.ob_МинПарам = new System.Windows.Forms.NumericUpDown();
             this.ob_ЧасПарам = new System.Windows.Forms.NumericUpDown();
             this.ob_ВысотаПарам = new System.Windows.Forms.NumericUpDown();
             this.ob_ВертСдвиг = new System.Windows.Forms.Button();
             this.ob_ГоризСдвиг = new System.Windows.Forms.Button();
-            this.ob_МаксКолвоТочек = new System.Windows.Forms.NumericUpDown();
             this.ob_СтатусБар = new System.Windows.Forms.StatusStrip();
             this.ob_СтатусПрограммы = new System.Windows.Forms.ToolStripStatusLabel();
             this.ob_ПрижатьПоY = new System.Windows.Forms.CheckBox();
@@ -67,18 +65,8 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             this.ob_СледАномальныйБар = new System.Windows.Forms.Button();
             this.ob_ПредАномальныйБар = new System.Windows.Forms.Button();
             this.ob_ЗаменитьБар = new System.Windows.Forms.Button();
-            this.label14 = new System.Windows.Forms.Label();
-            this.ob_ПараметрДельтаАномальныйБаров = new System.Windows.Forms.NumericUpDown();
             this.ob_ЦветПалитра = new System.Windows.Forms.ColorDialog();
-            this.ob_УдалитьОдинокиеБары = new System.Windows.Forms.Button();
-            this.ob_ЗаменитьПустыеБары = new System.Windows.Forms.Button();
-            this.ob_ДельтаБольшеСредней = new System.Windows.Forms.Button();
-            this.label15 = new System.Windows.Forms.Label();
-            this.ob_КритерийГепа = new System.Windows.Forms.NumericUpDown();
-            this.label16 = new System.Windows.Forms.Label();
-            this.ob_ПоискГепов_ЧислоДелений = new System.Windows.Forms.NumericUpDown();
-            this.ob_МножительСреднего = new System.Windows.Forms.NumericUpDown();
-            this.label17 = new System.Windows.Forms.Label();
+            this.ob_ПоискГепов = new System.Windows.Forms.Button();
             this.ob_СерияВверх = new System.Windows.Forms.Button();
             this.ob_СерияВниз = new System.Windows.Forms.Button();
             this.label18 = new System.Windows.Forms.Label();
@@ -88,14 +76,53 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             this.загрузитьСериюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.сохранитьСериюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.удалитьСериюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.невелироватьВерToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.проверкаКотировокToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.поискдвойныхБаровToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.удалитьВсеДвойныеБарыСерииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.удалитьОдинокиеБарыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.заменитьПустыеБарыБарамиДонорскойToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.заменитьВсеАномальныеБарыБарамиДонорскойToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.видToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.отображатьСвечамиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.отображатьБарамиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.количествоОтображаемыхБаровНаСериюToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.цветToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.цветОкантовкиГрафикаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.цветФонаГрафикаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.цветОкантовкиСвечбаровToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.цветПовышенияСвечToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.цветПониженияСвечToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.цветОкантовкиСвечбаровToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.цветФонаГрафикаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.цветОкантовкиГрафикаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.перейтиКВыбраннойДатеToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.двойныеБарыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.поискдвойныхБаровToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.удалитьдвойныеБарыТекущегоСегмантаToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.удалитьВседвойныеБарыToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.фрагментToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.выбратьНачаломТекущийБарToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.выбратьКонцомТекущийБарToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.сдвинутьФрагментToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.началоФрагментаНачалоСерииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.конецФрагментаКонецСерииToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.показатьНачалоToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.показатьКонецToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ob_ВременныеСдвиги_Поиск = new System.Windows.Forms.Button();
+            this.ob_ВсплывающаяПодсказка = new System.Windows.Forms.ToolTip(this.components);
+            this.button2 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.ob_СдвинутьСектор = new System.Windows.Forms.Button();
+            this.label19 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
+            this.ob_Debug_label1 = new System.Windows.Forms.Label();
+            this.ob_Debug_label2 = new System.Windows.Forms.Label();
+            this.ob_Сегменты_ЗаменятьБарамиСдвига = new System.Windows.Forms.CheckBox();
+            this.label23 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
+            this.ob_Debug_label3 = new System.Windows.Forms.Label();
+            this.ob_БарыБольшеДонорской = new System.Windows.Forms.Button();
+            this.ob_КритерийОтклонения = new System.Windows.Forms.NumericUpDown();
+            this.label26 = new System.Windows.Forms.Label();
+            this.сдвинутьФрагментПоВертикалиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.ob_ГодПарам)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ob_МесПарам)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ob_ДнПарам)).BeginInit();
@@ -103,18 +130,14 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             ((System.ComponentModel.ISupportInitialize)(this.ob_МинПарам)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ob_ЧасПарам)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ob_ВысотаПарам)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ob_МаксКолвоТочек)).BeginInit();
             this.ob_СтатусБар.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ob_ЦенаОтрытияБара)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ob_ЦенаМаксБара)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ob_ЦенаМинБара)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ob_ЦенаЗакрытияБара)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ob_ПараметрДельтаАномальныйБаров)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ob_КритерийГепа)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ob_ПоискГепов_ЧислоДелений)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ob_МножительСреднего)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ob_ОбъёмБара)).BeginInit();
             this.ob_Меню.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ob_КритерийОтклонения)).BeginInit();
             this.SuspendLayout();
             // 
             // ob_График
@@ -132,7 +155,7 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             this.ob_График.ScrollMinX = 0D;
             this.ob_График.ScrollMinY = 0D;
             this.ob_График.ScrollMinY2 = 0D;
-            this.ob_График.Size = new System.Drawing.Size(1077, 422);
+            this.ob_График.Size = new System.Drawing.Size(1284, 422);
             this.ob_График.TabIndex = 0;
             this.ob_График.UseExtendedPrintDialog = true;
             this.ob_График.ZoomEvent += new ZedGraph.ZedGraphControl.ZoomEventHandler(this.e_График_ИзменениеМасштаба);
@@ -273,16 +296,6 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             this.label9.TabIndex = 22;
             this.label9.Text = "высота";
             // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(629, 93);
-            this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(101, 13);
-            this.label11.TabIndex = 39;
-            this.label11.Text = "Макс кол-во точек";
-            // 
             // ob_СекПарам
             // 
             this.ob_СекПарам.Location = new System.Drawing.Point(589, 96);
@@ -383,34 +396,6 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             this.ob_ГоризСдвиг.UseVisualStyleBackColor = true;
             this.ob_ГоризСдвиг.Click += new System.EventHandler(this.e_ГоризСдвиг_Click);
             // 
-            // ob_МаксКолвоТочек
-            // 
-            this.ob_МаксКолвоТочек.Increment = new decimal(new int[] {
-            1000,
-            0,
-            0,
-            0});
-            this.ob_МаксКолвоТочек.Location = new System.Drawing.Point(632, 109);
-            this.ob_МаксКолвоТочек.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.ob_МаксКолвоТочек.Maximum = new decimal(new int[] {
-            10000000,
-            0,
-            0,
-            0});
-            this.ob_МаксКолвоТочек.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
-            this.ob_МаксКолвоТочек.Name = "ob_МаксКолвоТочек";
-            this.ob_МаксКолвоТочек.Size = new System.Drawing.Size(114, 20);
-            this.ob_МаксКолвоТочек.TabIndex = 38;
-            this.ob_МаксКолвоТочек.Value = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            // 
             // ob_СтатусБар
             // 
             this.ob_СтатусБар.ImageScalingSize = new System.Drawing.Size(20, 20);
@@ -419,7 +404,7 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             this.ob_СтатусБар.Location = new System.Drawing.Point(0, 566);
             this.ob_СтатусБар.Name = "ob_СтатусБар";
             this.ob_СтатусБар.Padding = new System.Windows.Forms.Padding(1, 0, 9, 0);
-            this.ob_СтатусБар.Size = new System.Drawing.Size(1081, 22);
+            this.ob_СтатусБар.Size = new System.Drawing.Size(1288, 22);
             this.ob_СтатусБар.TabIndex = 42;
             this.ob_СтатусБар.Text = "statusStrip1";
             // 
@@ -434,7 +419,7 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             this.ob_ПрижатьПоY.AutoSize = true;
             this.ob_ПрижатьПоY.Checked = true;
             this.ob_ПрижатьПоY.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ob_ПрижатьПоY.Location = new System.Drawing.Point(301, 16);
+            this.ob_ПрижатьПоY.Location = new System.Drawing.Point(301, 22);
             this.ob_ПрижатьПоY.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.ob_ПрижатьПоY.Name = "ob_ПрижатьПоY";
             this.ob_ПрижатьПоY.Size = new System.Drawing.Size(15, 14);
@@ -447,7 +432,7 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             this.ob_ПрижатьПоX.AutoSize = true;
             this.ob_ПрижатьПоX.Checked = true;
             this.ob_ПрижатьПоX.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.ob_ПрижатьПоX.Location = new System.Drawing.Point(320, 16);
+            this.ob_ПрижатьПоX.Location = new System.Drawing.Point(320, 22);
             this.ob_ПрижатьПоX.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.ob_ПрижатьПоX.Name = "ob_ПрижатьПоX";
             this.ob_ПрижатьПоX.Size = new System.Drawing.Size(15, 14);
@@ -457,19 +442,19 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             // 
             // ob_НайтиАномальныеБары
             // 
-            this.ob_НайтиАномальныеБары.Location = new System.Drawing.Point(336, 27);
+            this.ob_НайтиАномальныеБары.Location = new System.Drawing.Point(337, 50);
             this.ob_НайтиАномальныеБары.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ob_НайтиАномальныеБары.Name = "ob_НайтиАномальныеБары";
             this.ob_НайтиАномальныеБары.Size = new System.Drawing.Size(158, 19);
             this.ob_НайтиАномальныеБары.TabIndex = 46;
-            this.ob_НайтиАномальныеБары.Text = "Найти аномальные бары";
+            this.ob_НайтиАномальныеБары.Text = "Аномальные бары";
             this.ob_НайтиАномальныеБары.UseVisualStyleBackColor = true;
             this.ob_НайтиАномальныеБары.Click += new System.EventHandler(this.e_НайтиАномальныеБары_Click);
             // 
             // ob_ЦенаОтрытияБара
             // 
             this.ob_ЦенаОтрытияБара.DecimalPlaces = 5;
-            this.ob_ЦенаОтрытияБара.Location = new System.Drawing.Point(238, 32);
+            this.ob_ЦенаОтрытияБара.Location = new System.Drawing.Point(238, 38);
             this.ob_ЦенаОтрытияБара.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ob_ЦенаОтрытияБара.Maximum = new decimal(new int[] {
             1000000,
@@ -489,7 +474,7 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(202, 16);
+            this.label7.Location = new System.Drawing.Point(202, 22);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(87, 13);
@@ -499,7 +484,7 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(202, 32);
+            this.label8.Location = new System.Drawing.Point(202, 38);
             this.label8.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(32, 13);
@@ -509,7 +494,7 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(202, 52);
+            this.label10.Location = new System.Drawing.Point(202, 58);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(34, 13);
@@ -519,7 +504,7 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             // ob_ЦенаМаксБара
             // 
             this.ob_ЦенаМаксБара.DecimalPlaces = 5;
-            this.ob_ЦенаМаксБара.Location = new System.Drawing.Point(238, 52);
+            this.ob_ЦенаМаксБара.Location = new System.Drawing.Point(238, 58);
             this.ob_ЦенаМаксБара.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ob_ЦенаМаксБара.Maximum = new decimal(new int[] {
             1000000,
@@ -539,7 +524,7 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(202, 72);
+            this.label12.Location = new System.Drawing.Point(202, 78);
             this.label12.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(28, 13);
@@ -549,7 +534,7 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             // ob_ЦенаМинБара
             // 
             this.ob_ЦенаМинБара.DecimalPlaces = 5;
-            this.ob_ЦенаМинБара.Location = new System.Drawing.Point(238, 72);
+            this.ob_ЦенаМинБара.Location = new System.Drawing.Point(238, 78);
             this.ob_ЦенаМинБара.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ob_ЦенаМинБара.Maximum = new decimal(new int[] {
             1000000,
@@ -569,7 +554,7 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(202, 92);
+            this.label13.Location = new System.Drawing.Point(202, 98);
             this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(32, 13);
@@ -579,7 +564,7 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             // ob_ЦенаЗакрытияБара
             // 
             this.ob_ЦенаЗакрытияБара.DecimalPlaces = 5;
-            this.ob_ЦенаЗакрытияБара.Location = new System.Drawing.Point(238, 92);
+            this.ob_ЦенаЗакрытияБара.Location = new System.Drawing.Point(238, 98);
             this.ob_ЦенаЗакрытияБара.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ob_ЦенаЗакрытияБара.Maximum = new decimal(new int[] {
             1000000,
@@ -598,7 +583,7 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             // 
             // ob_СледАномальныйБар
             // 
-            this.ob_СледАномальныйБар.Location = new System.Drawing.Point(449, 50);
+            this.ob_СледАномальныйБар.Location = new System.Drawing.Point(450, 27);
             this.ob_СледАномальныйБар.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ob_СледАномальныйБар.Name = "ob_СледАномальныйБар";
             this.ob_СледАномальныйБар.Size = new System.Drawing.Size(45, 19);
@@ -609,7 +594,7 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             // 
             // ob_ПредАномальныйБар
             // 
-            this.ob_ПредАномальныйБар.Location = new System.Drawing.Point(336, 50);
+            this.ob_ПредАномальныйБар.Location = new System.Drawing.Point(337, 27);
             this.ob_ПредАномальныйБар.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ob_ПредАномальныйБар.Name = "ob_ПредАномальныйБар";
             this.ob_ПредАномальныйБар.Size = new System.Drawing.Size(45, 19);
@@ -620,7 +605,7 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             // 
             // ob_ЗаменитьБар
             // 
-            this.ob_ЗаменитьБар.Location = new System.Drawing.Point(381, 50);
+            this.ob_ЗаменитьБар.Location = new System.Drawing.Point(382, 27);
             this.ob_ЗаменитьБар.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ob_ЗаменитьБар.Name = "ob_ЗаменитьБар";
             this.ob_ЗаменитьБар.Size = new System.Drawing.Size(68, 19);
@@ -629,172 +614,16 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             this.ob_ЗаменитьБар.UseVisualStyleBackColor = true;
             this.ob_ЗаменитьБар.Click += new System.EventHandler(this.e_ЗаменитьВыбранныйБар_Click);
             // 
-            // label14
+            // ob_ПоискГепов
             // 
-            this.label14.AutoSize = true;
-            this.label14.Location = new System.Drawing.Point(336, 74);
-            this.label14.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(69, 13);
-            this.label14.TabIndex = 60;
-            this.label14.Text = "Расхожение";
-            // 
-            // ob_ПараметрДельтаАномальныйБаров
-            // 
-            this.ob_ПараметрДельтаАномальныйБаров.DecimalPlaces = 2;
-            this.ob_ПараметрДельтаАномальныйБаров.Location = new System.Drawing.Point(414, 72);
-            this.ob_ПараметрДельтаАномальныйБаров.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.ob_ПараметрДельтаАномальныйБаров.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.ob_ПараметрДельтаАномальныйБаров.Minimum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            -2147483648});
-            this.ob_ПараметрДельтаАномальныйБаров.Name = "ob_ПараметрДельтаАномальныйБаров";
-            this.ob_ПараметрДельтаАномальныйБаров.Size = new System.Drawing.Size(78, 20);
-            this.ob_ПараметрДельтаАномальныйБаров.TabIndex = 59;
-            this.ob_ПараметрДельтаАномальныйБаров.Value = new decimal(new int[] {
-            3,
-            0,
-            0,
-            0});
-            // 
-            // ob_УдалитьОдинокиеБары
-            // 
-            this.ob_УдалитьОдинокиеБары.Location = new System.Drawing.Point(339, 95);
-            this.ob_УдалитьОдинокиеБары.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.ob_УдалитьОдинокиеБары.Name = "ob_УдалитьОдинокиеБары";
-            this.ob_УдалитьОдинокиеБары.Size = new System.Drawing.Size(153, 19);
-            this.ob_УдалитьОдинокиеБары.TabIndex = 63;
-            this.ob_УдалитьОдинокиеБары.Text = "Удалить одинокие бары";
-            this.ob_УдалитьОдинокиеБары.UseVisualStyleBackColor = true;
-            this.ob_УдалитьОдинокиеБары.Click += new System.EventHandler(this.e_УдалитьОдинокиеБары_Click);
-            // 
-            // ob_ЗаменитьПустыеБары
-            // 
-            this.ob_ЗаменитьПустыеБары.Location = new System.Drawing.Point(339, 114);
-            this.ob_ЗаменитьПустыеБары.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.ob_ЗаменитьПустыеБары.Name = "ob_ЗаменитьПустыеБары";
-            this.ob_ЗаменитьПустыеБары.Size = new System.Drawing.Size(153, 19);
-            this.ob_ЗаменитьПустыеБары.TabIndex = 64;
-            this.ob_ЗаменитьПустыеБары.Text = "Заменить пусты бары";
-            this.ob_ЗаменитьПустыеБары.UseVisualStyleBackColor = true;
-            this.ob_ЗаменитьПустыеБары.Click += new System.EventHandler(this.e_ЗаменитьВсеПустыеБары_Click);
-            // 
-            // ob_ДельтаБольшеСредней
-            // 
-            this.ob_ДельтаБольшеСредней.Location = new System.Drawing.Point(750, 27);
-            this.ob_ДельтаБольшеСредней.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.ob_ДельтаБольшеСредней.Name = "ob_ДельтаБольшеСредней";
-            this.ob_ДельтаБольшеСредней.Size = new System.Drawing.Size(134, 19);
-            this.ob_ДельтаБольшеСредней.TabIndex = 65;
-            this.ob_ДельтаБольшеСредней.Text = "Поиск гепов";
-            this.ob_ДельтаБольшеСредней.UseVisualStyleBackColor = true;
-            this.ob_ДельтаБольшеСредней.Click += new System.EventHandler(this.e_ПоискГепов_Click);
-            // 
-            // label15
-            // 
-            this.label15.AutoSize = true;
-            this.label15.Location = new System.Drawing.Point(747, 51);
-            this.label15.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(55, 13);
-            this.label15.TabIndex = 67;
-            this.label15.Text = "Критерий";
-            // 
-            // ob_КритерийГепа
-            // 
-            this.ob_КритерийГепа.DecimalPlaces = 2;
-            this.ob_КритерийГепа.Location = new System.Drawing.Point(806, 47);
-            this.ob_КритерийГепа.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.ob_КритерийГепа.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.ob_КритерийГепа.Minimum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            -2147483648});
-            this.ob_КритерийГепа.Name = "ob_КритерийГепа";
-            this.ob_КритерийГепа.Size = new System.Drawing.Size(78, 20);
-            this.ob_КритерийГепа.TabIndex = 66;
-            this.ob_КритерийГепа.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Location = new System.Drawing.Point(747, 75);
-            this.label16.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(52, 13);
-            this.label16.TabIndex = 69;
-            this.label16.Text = "Делений";
-            // 
-            // ob_ПоискГепов_ЧислоДелений
-            // 
-            this.ob_ПоискГепов_ЧислоДелений.Location = new System.Drawing.Point(806, 71);
-            this.ob_ПоискГепов_ЧислоДелений.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.ob_ПоискГепов_ЧислоДелений.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.ob_ПоискГепов_ЧислоДелений.Minimum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            -2147483648});
-            this.ob_ПоискГепов_ЧислоДелений.Name = "ob_ПоискГепов_ЧислоДелений";
-            this.ob_ПоискГепов_ЧислоДелений.Size = new System.Drawing.Size(78, 20);
-            this.ob_ПоискГепов_ЧислоДелений.TabIndex = 68;
-            this.ob_ПоискГепов_ЧислоДелений.Value = new decimal(new int[] {
-            10,
-            0,
-            0,
-            0});
-            // 
-            // ob_МножительСреднего
-            // 
-            this.ob_МножительСреднего.Location = new System.Drawing.Point(750, 109);
-            this.ob_МножительСреднего.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.ob_МножительСреднего.Maximum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            0});
-            this.ob_МножительСреднего.Minimum = new decimal(new int[] {
-            10000,
-            0,
-            0,
-            -2147483648});
-            this.ob_МножительСреднего.Name = "ob_МножительСреднего";
-            this.ob_МножительСреднего.Size = new System.Drawing.Size(134, 20);
-            this.ob_МножительСреднего.TabIndex = 68;
-            this.ob_МножительСреднего.Value = new decimal(new int[] {
-            2,
-            0,
-            0,
-            0});
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Location = new System.Drawing.Point(747, 93);
-            this.label17.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(115, 13);
-            this.label17.TabIndex = 69;
-            this.label17.Text = "Множитель среднего";
+            this.ob_ПоискГепов.Location = new System.Drawing.Point(337, 72);
+            this.ob_ПоискГепов.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.ob_ПоискГепов.Name = "ob_ПоискГепов";
+            this.ob_ПоискГепов.Size = new System.Drawing.Size(158, 19);
+            this.ob_ПоискГепов.TabIndex = 65;
+            this.ob_ПоискГепов.Text = "Гепы";
+            this.ob_ПоискГепов.UseVisualStyleBackColor = true;
+            this.ob_ПоискГепов.Click += new System.EventHandler(this.e_ПоискГепов_Click);
             // 
             // ob_СерияВверх
             // 
@@ -821,7 +650,7 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             // label18
             // 
             this.label18.AutoSize = true;
-            this.label18.Location = new System.Drawing.Point(194, 116);
+            this.label18.Location = new System.Drawing.Point(194, 122);
             this.label18.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(42, 13);
@@ -831,7 +660,7 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             // ob_ОбъёмБара
             // 
             this.ob_ОбъёмБара.DecimalPlaces = 5;
-            this.ob_ОбъёмБара.Location = new System.Drawing.Point(238, 112);
+            this.ob_ОбъёмБара.Location = new System.Drawing.Point(238, 118);
             this.ob_ОбъёмБара.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.ob_ОбъёмБара.Maximum = new decimal(new int[] {
             1000000,
@@ -852,10 +681,12 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             // 
             this.ob_Меню.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.серияToolStripMenuItem,
-            this.видToolStripMenuItem});
+            this.видToolStripMenuItem,
+            this.двойныеБарыToolStripMenuItem,
+            this.фрагментToolStripMenuItem});
             this.ob_Меню.Location = new System.Drawing.Point(0, 0);
             this.ob_Меню.Name = "ob_Меню";
-            this.ob_Меню.Size = new System.Drawing.Size(1081, 24);
+            this.ob_Меню.Size = new System.Drawing.Size(1288, 24);
             this.ob_Меню.TabIndex = 74;
             this.ob_Меню.Text = "menuStrip1";
             // 
@@ -864,7 +695,14 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             this.серияToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.загрузитьСериюToolStripMenuItem,
             this.сохранитьСериюToolStripMenuItem,
-            this.удалитьСериюToolStripMenuItem});
+            this.удалитьСериюToolStripMenuItem,
+            this.невелироватьВерToolStripMenuItem,
+            this.проверкаКотировокToolStripMenuItem,
+            this.поискдвойныхБаровToolStripMenuItem,
+            this.удалитьВсеДвойныеБарыСерииToolStripMenuItem,
+            this.удалитьОдинокиеБарыToolStripMenuItem,
+            this.заменитьПустыеБарыБарамиДонорскойToolStripMenuItem,
+            this.заменитьВсеАномальныеБарыБарамиДонорскойToolStripMenuItem});
             this.серияToolStripMenuItem.Name = "серияToolStripMenuItem";
             this.серияToolStripMenuItem.Size = new System.Drawing.Size(53, 20);
             this.серияToolStripMenuItem.Text = "Серия";
@@ -872,34 +710,81 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             // загрузитьСериюToolStripMenuItem
             // 
             this.загрузитьСериюToolStripMenuItem.Name = "загрузитьСериюToolStripMenuItem";
-            this.загрузитьСериюToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.загрузитьСериюToolStripMenuItem.Size = new System.Drawing.Size(361, 22);
             this.загрузитьСериюToolStripMenuItem.Text = "Загрузить серию";
             this.загрузитьСериюToolStripMenuItem.Click += new System.EventHandler(this.ЗагрузитьСериюToolStripMenuItem_Click);
             // 
             // сохранитьСериюToolStripMenuItem
             // 
             this.сохранитьСериюToolStripMenuItem.Name = "сохранитьСериюToolStripMenuItem";
-            this.сохранитьСериюToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.сохранитьСериюToolStripMenuItem.Size = new System.Drawing.Size(361, 22);
             this.сохранитьСериюToolStripMenuItem.Text = "Сохранить серию";
             this.сохранитьСериюToolStripMenuItem.Click += new System.EventHandler(this.СохранитьСериюToolStripMenuItem_Click);
             // 
             // удалитьСериюToolStripMenuItem
             // 
             this.удалитьСериюToolStripMenuItem.Name = "удалитьСериюToolStripMenuItem";
-            this.удалитьСериюToolStripMenuItem.Size = new System.Drawing.Size(172, 22);
+            this.удалитьСериюToolStripMenuItem.Size = new System.Drawing.Size(361, 22);
             this.удалитьСериюToolStripMenuItem.Text = "Удалить серию";
             this.удалитьСериюToolStripMenuItem.Click += new System.EventHandler(this.УдалитьСериюToolStripMenuItem_Click);
+            // 
+            // невелироватьВерToolStripMenuItem
+            // 
+            this.невелироватьВерToolStripMenuItem.Name = "невелироватьВерToolStripMenuItem";
+            this.невелироватьВерToolStripMenuItem.Size = new System.Drawing.Size(361, 22);
+            this.невелироватьВерToolStripMenuItem.Text = "Невелировать вертикальный сдвиг";
+            this.невелироватьВерToolStripMenuItem.Click += new System.EventHandler(this.НевелироватьВерToolStripMenuItem_Click);
+            // 
+            // проверкаКотировокToolStripMenuItem
+            // 
+            this.проверкаКотировокToolStripMenuItem.Name = "проверкаКотировокToolStripMenuItem";
+            this.проверкаКотировокToolStripMenuItem.Size = new System.Drawing.Size(361, 22);
+            this.проверкаКотировокToolStripMenuItem.Text = "Проверка котировок";
+            this.проверкаКотировокToolStripMenuItem.Click += new System.EventHandler(this.ПроверкаКотировокToolStripMenuItem_Click);
+            // 
+            // поискдвойныхБаровToolStripMenuItem
+            // 
+            this.поискдвойныхБаровToolStripMenuItem.Name = "поискдвойныхБаровToolStripMenuItem";
+            this.поискдвойныхБаровToolStripMenuItem.Size = new System.Drawing.Size(361, 22);
+            this.поискдвойныхБаровToolStripMenuItem.Text = "Поиск двойных баров";
+            this.поискдвойныхБаровToolStripMenuItem.Click += new System.EventHandler(this.e_ПоискдвойныхБаровToolStripMenuItem_Click);
+            // 
+            // удалитьВсеДвойныеБарыСерииToolStripMenuItem
+            // 
+            this.удалитьВсеДвойныеБарыСерииToolStripMenuItem.Name = "удалитьВсеДвойныеБарыСерииToolStripMenuItem";
+            this.удалитьВсеДвойныеБарыСерииToolStripMenuItem.Size = new System.Drawing.Size(361, 22);
+            this.удалитьВсеДвойныеБарыСерииToolStripMenuItem.Text = "Удалить все двойные бары серии";
+            this.удалитьВсеДвойныеБарыСерииToolStripMenuItem.Click += new System.EventHandler(this.e_УдалитьВсеДвойныеБарыСерииToolStripMenuItem_Click);
+            // 
+            // удалитьОдинокиеБарыToolStripMenuItem
+            // 
+            this.удалитьОдинокиеБарыToolStripMenuItem.Name = "удалитьОдинокиеБарыToolStripMenuItem";
+            this.удалитьОдинокиеБарыToolStripMenuItem.Size = new System.Drawing.Size(361, 22);
+            this.удалитьОдинокиеБарыToolStripMenuItem.Text = "Удалить одинокие бары";
+            this.удалитьОдинокиеБарыToolStripMenuItem.Click += new System.EventHandler(this.e_УдалитьОдинокиеБарыToolStripMenuItem_Click);
+            // 
+            // заменитьПустыеБарыБарамиДонорскойToolStripMenuItem
+            // 
+            this.заменитьПустыеБарыБарамиДонорскойToolStripMenuItem.Name = "заменитьПустыеБарыБарамиДонорскойToolStripMenuItem";
+            this.заменитьПустыеБарыБарамиДонорскойToolStripMenuItem.Size = new System.Drawing.Size(361, 22);
+            this.заменитьПустыеБарыБарамиДонорскойToolStripMenuItem.Text = "Заменить пустые бары барами донорской";
+            this.заменитьПустыеБарыБарамиДонорскойToolStripMenuItem.Click += new System.EventHandler(this.e_ЗаменитьПустыеБарыБарамиДонорскойToolStripMenuItem_Click);
+            // 
+            // заменитьВсеАномальныеБарыБарамиДонорскойToolStripMenuItem
+            // 
+            this.заменитьВсеАномальныеБарыБарамиДонорскойToolStripMenuItem.Name = "заменитьВсеАномальныеБарыБарамиДонорскойToolStripMenuItem";
+            this.заменитьВсеАномальныеБарыБарамиДонорскойToolStripMenuItem.Size = new System.Drawing.Size(361, 22);
+            this.заменитьВсеАномальныеБарыБарамиДонорскойToolStripMenuItem.Text = "Заменить все аномальные бары барами донорской";
+            this.заменитьВсеАномальныеБарыБарамиДонорскойToolStripMenuItem.Click += new System.EventHandler(this.e_ЗаменитьВсеАномальныеБарыБарамиДонорскойToolStripMenuItem_Click);
             // 
             // видToolStripMenuItem
             // 
             this.видToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.отображатьСвечамиToolStripMenuItem,
             this.отображатьБарамиToolStripMenuItem,
-            this.цветПовышенияСвечToolStripMenuItem,
-            this.цветПониженияСвечToolStripMenuItem,
-            this.цветОкантовкиСвечбаровToolStripMenuItem,
-            this.цветФонаГрафикаToolStripMenuItem,
-            this.цветОкантовкиГрафикаToolStripMenuItem});
+            this.количествоОтображаемыхБаровНаСериюToolStripMenuItem,
+            this.цветToolStripMenuItem,
+            this.перейтиКВыбраннойДатеToolStripMenuItem});
             this.видToolStripMenuItem.Name = "видToolStripMenuItem";
             this.видToolStripMenuItem.Size = new System.Drawing.Size(39, 20);
             this.видToolStripMenuItem.Text = "Вид";
@@ -907,16 +792,56 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             // отображатьСвечамиToolStripMenuItem
             // 
             this.отображатьСвечамиToolStripMenuItem.Name = "отображатьСвечамиToolStripMenuItem";
-            this.отображатьСвечамиToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
+            this.отображатьСвечамиToolStripMenuItem.Size = new System.Drawing.Size(317, 22);
             this.отображатьСвечамиToolStripMenuItem.Text = "Отображать свечами";
             this.отображатьСвечамиToolStripMenuItem.Click += new System.EventHandler(this.ОтображатьСвечамиToolStripMenuItem_Click);
             // 
             // отображатьБарамиToolStripMenuItem
             // 
             this.отображатьБарамиToolStripMenuItem.Name = "отображатьБарамиToolStripMenuItem";
-            this.отображатьБарамиToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
+            this.отображатьБарамиToolStripMenuItem.Size = new System.Drawing.Size(317, 22);
             this.отображатьБарамиToolStripMenuItem.Text = "Отображать барами";
             this.отображатьБарамиToolStripMenuItem.Click += new System.EventHandler(this.ОтображатьБарамиToolStripMenuItem_Click);
+            // 
+            // количествоОтображаемыхБаровНаСериюToolStripMenuItem
+            // 
+            this.количествоОтображаемыхБаровНаСериюToolStripMenuItem.Name = "количествоОтображаемыхБаровНаСериюToolStripMenuItem";
+            this.количествоОтображаемыхБаровНаСериюToolStripMenuItem.Size = new System.Drawing.Size(317, 22);
+            this.количествоОтображаемыхБаровНаСериюToolStripMenuItem.Text = "Количество отображаемых баров на серию";
+            this.количествоОтображаемыхБаровНаСериюToolStripMenuItem.Click += new System.EventHandler(this.e_КоличествоОтображаемыхБаровНаСериюToolStripMenuItem_Click);
+            // 
+            // цветToolStripMenuItem
+            // 
+            this.цветToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.цветОкантовкиГрафикаToolStripMenuItem,
+            this.цветФонаГрафикаToolStripMenuItem,
+            this.цветОкантовкиСвечбаровToolStripMenuItem,
+            this.цветПовышенияСвечToolStripMenuItem,
+            this.цветПониженияСвечToolStripMenuItem});
+            this.цветToolStripMenuItem.Name = "цветToolStripMenuItem";
+            this.цветToolStripMenuItem.Size = new System.Drawing.Size(317, 22);
+            this.цветToolStripMenuItem.Text = "Цвет";
+            // 
+            // цветОкантовкиГрафикаToolStripMenuItem
+            // 
+            this.цветОкантовкиГрафикаToolStripMenuItem.Name = "цветОкантовкиГрафикаToolStripMenuItem";
+            this.цветОкантовкиГрафикаToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
+            this.цветОкантовкиГрафикаToolStripMenuItem.Text = "Цвет окантовки графика";
+            this.цветОкантовкиГрафикаToolStripMenuItem.Click += new System.EventHandler(this.ЦветОкантовкиГрафикаToolStripMenuItem_Click);
+            // 
+            // цветФонаГрафикаToolStripMenuItem
+            // 
+            this.цветФонаГрафикаToolStripMenuItem.Name = "цветФонаГрафикаToolStripMenuItem";
+            this.цветФонаГрафикаToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
+            this.цветФонаГрафикаToolStripMenuItem.Text = "Цвет фона графика";
+            this.цветФонаГрафикаToolStripMenuItem.Click += new System.EventHandler(this.ЦветФонаГрафикаToolStripMenuItem_Click);
+            // 
+            // цветОкантовкиСвечбаровToolStripMenuItem
+            // 
+            this.цветОкантовкиСвечбаровToolStripMenuItem.Name = "цветОкантовкиСвечбаровToolStripMenuItem";
+            this.цветОкантовкиСвечбаровToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
+            this.цветОкантовкиСвечбаровToolStripMenuItem.Text = "Цвет окантовки свеч/баров";
+            this.цветОкантовкиСвечбаровToolStripMenuItem.Click += new System.EventHandler(this.ЦветОкантовкиСвечбаровToolStripMenuItem_Click);
             // 
             // цветПовышенияСвечToolStripMenuItem
             // 
@@ -932,49 +857,314 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             this.цветПониженияСвечToolStripMenuItem.Text = "Цвет понижения свеч";
             this.цветПониженияСвечToolStripMenuItem.Click += new System.EventHandler(this.ЦветПониженияСвечToolStripMenuItem_Click);
             // 
-            // цветОкантовкиСвечбаровToolStripMenuItem
+            // перейтиКВыбраннойДатеToolStripMenuItem
             // 
-            this.цветОкантовкиСвечбаровToolStripMenuItem.Name = "цветОкантовкиСвечбаровToolStripMenuItem";
-            this.цветОкантовкиСвечбаровToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
-            this.цветОкантовкиСвечбаровToolStripMenuItem.Text = "Цвет окантовки свеч/баров";
-            this.цветОкантовкиСвечбаровToolStripMenuItem.Click += new System.EventHandler(this.ЦветОкантовкиСвечбаровToolStripMenuItem_Click);
+            this.перейтиКВыбраннойДатеToolStripMenuItem.Name = "перейтиКВыбраннойДатеToolStripMenuItem";
+            this.перейтиКВыбраннойДатеToolStripMenuItem.Size = new System.Drawing.Size(317, 22);
+            this.перейтиКВыбраннойДатеToolStripMenuItem.Text = "Перейти к выбранной дате";
+            this.перейтиКВыбраннойДатеToolStripMenuItem.Click += new System.EventHandler(this.e_ПерейтиКВыбраннойДатеToolStripMenuItem_Click);
             // 
-            // цветФонаГрафикаToolStripMenuItem
+            // двойныеБарыToolStripMenuItem
             // 
-            this.цветФонаГрафикаToolStripMenuItem.Name = "цветФонаГрафикаToolStripMenuItem";
-            this.цветФонаГрафикаToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
-            this.цветФонаГрафикаToolStripMenuItem.Text = "Цвет фона графика";
-            this.цветФонаГрафикаToolStripMenuItem.Click += new System.EventHandler(this.ЦветФонаГрафикаToolStripMenuItem_Click);
+            this.двойныеБарыToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.поискдвойныхБаровToolStripMenuItem1,
+            this.удалитьдвойныеБарыТекущегоСегмантаToolStripMenuItem,
+            this.удалитьВседвойныеБарыToolStripMenuItem});
+            this.двойныеБарыToolStripMenuItem.Name = "двойныеБарыToolStripMenuItem";
+            this.двойныеБарыToolStripMenuItem.Size = new System.Drawing.Size(115, 20);
+            this.двойныеБарыToolStripMenuItem.Text = "Временной сдвиг";
             // 
-            // цветОкантовкиГрафикаToolStripMenuItem
+            // поискдвойныхБаровToolStripMenuItem1
             // 
-            this.цветОкантовкиГрафикаToolStripMenuItem.Name = "цветОкантовкиГрафикаToolStripMenuItem";
-            this.цветОкантовкиГрафикаToolStripMenuItem.Size = new System.Drawing.Size(226, 22);
-            this.цветОкантовкиГрафикаToolStripMenuItem.Text = "Цвет окантовки графика";
-            this.цветОкантовкиГрафикаToolStripMenuItem.Click += new System.EventHandler(this.ЦветОкантовкиГрафикаToolStripMenuItem_Click);
+            this.поискдвойныхБаровToolStripMenuItem1.Name = "поискдвойныхБаровToolStripMenuItem1";
+            this.поискдвойныхБаровToolStripMenuItem1.Size = new System.Drawing.Size(319, 22);
+            this.поискдвойныхБаровToolStripMenuItem1.Text = "Поиск \"двойных баров\"";
+            this.поискдвойныхБаровToolStripMenuItem1.Click += new System.EventHandler(this.e_ПоискдвойныхБаровToolStripMenuItem1_Click);
+            // 
+            // удалитьдвойныеБарыТекущегоСегмантаToolStripMenuItem
+            // 
+            this.удалитьдвойныеБарыТекущегоСегмантаToolStripMenuItem.Name = "удалитьдвойныеБарыТекущегоСегмантаToolStripMenuItem";
+            this.удалитьдвойныеБарыТекущегоСегмантаToolStripMenuItem.Size = new System.Drawing.Size(319, 22);
+            this.удалитьдвойныеБарыТекущегоСегмантаToolStripMenuItem.Text = "Удалить \"двойные бары\" текущего сегмента";
+            this.удалитьдвойныеБарыТекущегоСегмантаToolStripMenuItem.Click += new System.EventHandler(this.e_УдалитьдвойныеБарыТекущегоСегмантаToolStripMenuItem_Click);
+            // 
+            // удалитьВседвойныеБарыToolStripMenuItem
+            // 
+            this.удалитьВседвойныеБарыToolStripMenuItem.Name = "удалитьВседвойныеБарыToolStripMenuItem";
+            this.удалитьВседвойныеБарыToolStripMenuItem.Size = new System.Drawing.Size(319, 22);
+            this.удалитьВседвойныеБарыToolStripMenuItem.Text = "Удалить \"двойные бары\" всех сегментов";
+            this.удалитьВседвойныеБарыToolStripMenuItem.Click += new System.EventHandler(this.e_УдалитьВседвойныеБарыToolStripMenuItem_Click);
+            // 
+            // фрагментToolStripMenuItem
+            // 
+            this.фрагментToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.выбратьНачаломТекущийБарToolStripMenuItem,
+            this.выбратьКонцомТекущийБарToolStripMenuItem,
+            this.сдвинутьФрагментПоВертикалиToolStripMenuItem,
+            this.сдвинутьФрагментToolStripMenuItem,
+            this.началоФрагментаНачалоСерииToolStripMenuItem,
+            this.конецФрагментаКонецСерииToolStripMenuItem,
+            this.показатьНачалоToolStripMenuItem,
+            this.показатьКонецToolStripMenuItem});
+            this.фрагментToolStripMenuItem.Name = "фрагментToolStripMenuItem";
+            this.фрагментToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
+            this.фрагментToolStripMenuItem.Text = "Фрагмент";
+            // 
+            // выбратьНачаломТекущийБарToolStripMenuItem
+            // 
+            this.выбратьНачаломТекущийБарToolStripMenuItem.Name = "выбратьНачаломТекущийБарToolStripMenuItem";
+            this.выбратьНачаломТекущийБарToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
+            this.выбратьНачаломТекущийБарToolStripMenuItem.Text = "Выбрать началом текущий бар";
+            this.выбратьНачаломТекущийБарToolStripMenuItem.Click += new System.EventHandler(this.e_ВыбратьНачаломТекущийБарToolStripMenuItem_Click);
+            // 
+            // выбратьКонцомТекущийБарToolStripMenuItem
+            // 
+            this.выбратьКонцомТекущийБарToolStripMenuItem.Name = "выбратьКонцомТекущийБарToolStripMenuItem";
+            this.выбратьКонцомТекущийБарToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
+            this.выбратьКонцомТекущийБарToolStripMenuItem.Text = "Выбрать концом текущий бар";
+            this.выбратьКонцомТекущийБарToolStripMenuItem.Click += new System.EventHandler(this.e_ВыбратьКонцомТекущийБарToolStripMenuItem_Click);
+            // 
+            // сдвинутьФрагментToolStripMenuItem
+            // 
+            this.сдвинутьФрагментToolStripMenuItem.Name = "сдвинутьФрагментToolStripMenuItem";
+            this.сдвинутьФрагментToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
+            this.сдвинутьФрагментToolStripMenuItem.Text = "Сдвинуть фрагмент по времени";
+            this.сдвинутьФрагментToolStripMenuItem.Click += new System.EventHandler(this.e_СдвинутьФрагментПоВремениToolStripMenuItem_Click);
+            // 
+            // началоФрагментаНачалоСерииToolStripMenuItem
+            // 
+            this.началоФрагментаНачалоСерииToolStripMenuItem.Name = "началоФрагментаНачалоСерииToolStripMenuItem";
+            this.началоФрагментаНачалоСерииToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
+            this.началоФрагментаНачалоСерииToolStripMenuItem.Text = "Начало фрагмента = начало серии";
+            this.началоФрагментаНачалоСерииToolStripMenuItem.Click += new System.EventHandler(this.e_НачалоФрагментаНачалоСерииToolStripMenuItem_Click);
+            // 
+            // конецФрагментаКонецСерииToolStripMenuItem
+            // 
+            this.конецФрагментаКонецСерииToolStripMenuItem.Name = "конецФрагментаКонецСерииToolStripMenuItem";
+            this.конецФрагментаКонецСерииToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
+            this.конецФрагментаКонецСерииToolStripMenuItem.Text = "Конец фрагмента = конец серии";
+            this.конецФрагментаКонецСерииToolStripMenuItem.Click += new System.EventHandler(this.e_КонецФрагментаКонецСерииToolStripMenuItem_Click);
+            // 
+            // показатьНачалоToolStripMenuItem
+            // 
+            this.показатьНачалоToolStripMenuItem.Name = "показатьНачалоToolStripMenuItem";
+            this.показатьНачалоToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
+            this.показатьНачалоToolStripMenuItem.Text = "Показать Начало";
+            this.показатьНачалоToolStripMenuItem.Click += new System.EventHandler(this.e_ПоказатьНачалоToolStripMenuItem_Click);
+            // 
+            // показатьКонецToolStripMenuItem
+            // 
+            this.показатьКонецToolStripMenuItem.Name = "показатьКонецToolStripMenuItem";
+            this.показатьКонецToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
+            this.показатьКонецToolStripMenuItem.Text = "Показать Конец";
+            this.показатьКонецToolStripMenuItem.Click += new System.EventHandler(this.e_ПоказатьКонецToolStripMenuItem_Click);
+            // 
+            // ob_ВременныеСдвиги_Поиск
+            // 
+            this.ob_ВременныеСдвиги_Поиск.Location = new System.Drawing.Point(749, 72);
+            this.ob_ВременныеСдвиги_Поиск.Name = "ob_ВременныеСдвиги_Поиск";
+            this.ob_ВременныеСдвиги_Поиск.Size = new System.Drawing.Size(117, 19);
+            this.ob_ВременныеСдвиги_Поиск.TabIndex = 76;
+            this.ob_ВременныеСдвиги_Поиск.Text = "Искать Сдвиг";
+            this.ob_ВременныеСдвиги_Поиск.UseVisualStyleBackColor = true;
+            this.ob_ВременныеСдвиги_Поиск.Click += new System.EventHandler(this.e_ВременныеСдвиги_Поиск_Click);
+            // 
+            // ob_ВсплывающаяПодсказка
+            // 
+            this.ob_ВсплывающаяПодсказка.AutoPopDelay = 20000;
+            this.ob_ВсплывающаяПодсказка.InitialDelay = 400;
+            this.ob_ВсплывающаяПодсказка.ReshowDelay = 100;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(749, 27);
+            this.button2.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(59, 19);
+            this.button2.TabIndex = 56;
+            this.button2.Text = "След";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.e_СледСегмент_Click);
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(807, 27);
+            this.button3.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(59, 19);
+            this.button3.TabIndex = 57;
+            this.button3.Text = "Пред";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.e_ПредСегмент_Click);
+            // 
+            // ob_СдвинутьСектор
+            // 
+            this.ob_СдвинутьСектор.Location = new System.Drawing.Point(749, 50);
+            this.ob_СдвинутьСектор.Name = "ob_СдвинутьСектор";
+            this.ob_СдвинутьСектор.Size = new System.Drawing.Size(117, 19);
+            this.ob_СдвинутьСектор.TabIndex = 77;
+            this.ob_СдвинутьСектор.Text = "Сдвинуть сектор";
+            this.ob_СдвинутьСектор.UseVisualStyleBackColor = true;
+            this.ob_СдвинутьСектор.Click += new System.EventHandler(this.e_СдвинутьСектор_Click);
+            // 
+            // label19
+            // 
+            this.label19.AutoSize = true;
+            this.label19.Location = new System.Drawing.Point(747, 121);
+            this.label19.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label19.Name = "label19";
+            this.label19.Size = new System.Drawing.Size(90, 13);
+            this.label19.TabIndex = 78;
+            this.label19.Text = "Средняя высота";
+            // 
+            // label20
+            // 
+            this.label20.AutoSize = true;
+            this.label20.Location = new System.Drawing.Point(747, 107);
+            this.label20.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(76, 13);
+            this.label20.TabIndex = 78;
+            this.label20.Text = "ДельтаСерий";
+            // 
+            // ob_Debug_label1
+            // 
+            this.ob_Debug_label1.AutoSize = true;
+            this.ob_Debug_label1.Location = new System.Drawing.Point(841, 121);
+            this.ob_Debug_label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ob_Debug_label1.Name = "ob_Debug_label1";
+            this.ob_Debug_label1.Size = new System.Drawing.Size(13, 13);
+            this.ob_Debug_label1.TabIndex = 78;
+            this.ob_Debug_label1.Text = "0";
+            // 
+            // ob_Debug_label2
+            // 
+            this.ob_Debug_label2.AutoSize = true;
+            this.ob_Debug_label2.Location = new System.Drawing.Point(841, 107);
+            this.ob_Debug_label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ob_Debug_label2.Name = "ob_Debug_label2";
+            this.ob_Debug_label2.Size = new System.Drawing.Size(13, 13);
+            this.ob_Debug_label2.TabIndex = 78;
+            this.ob_Debug_label2.Text = "0";
+            // 
+            // ob_Сегменты_ЗаменятьБарамиСдвига
+            // 
+            this.ob_Сегменты_ЗаменятьБарамиСдвига.AutoSize = true;
+            this.ob_Сегменты_ЗаменятьБарамиСдвига.Location = new System.Drawing.Point(730, 76);
+            this.ob_Сегменты_ЗаменятьБарамиСдвига.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
+            this.ob_Сегменты_ЗаменятьБарамиСдвига.Name = "ob_Сегменты_ЗаменятьБарамиСдвига";
+            this.ob_Сегменты_ЗаменятьБарамиСдвига.Size = new System.Drawing.Size(15, 14);
+            this.ob_Сегменты_ЗаменятьБарамиСдвига.TabIndex = 83;
+            this.ob_Сегменты_ЗаменятьБарамиСдвига.UseVisualStyleBackColor = true;
+            // 
+            // label23
+            // 
+            this.label23.AutoSize = true;
+            this.label23.Location = new System.Drawing.Point(640, 74);
+            this.label23.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label23.Name = "label23";
+            this.label23.Size = new System.Drawing.Size(86, 13);
+            this.label23.TabIndex = 84;
+            this.label23.Text = "Заменять бары";
+            // 
+            // label24
+            // 
+            this.label24.AutoSize = true;
+            this.label24.Location = new System.Drawing.Point(746, 94);
+            this.label24.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(97, 13);
+            this.label24.TabIndex = 85;
+            this.label24.Text = "Текущий сегмент";
+            // 
+            // ob_Debug_label3
+            // 
+            this.ob_Debug_label3.AutoSize = true;
+            this.ob_Debug_label3.Location = new System.Drawing.Point(841, 94);
+            this.ob_Debug_label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.ob_Debug_label3.Name = "ob_Debug_label3";
+            this.ob_Debug_label3.Size = new System.Drawing.Size(16, 13);
+            this.ob_Debug_label3.TabIndex = 86;
+            this.ob_Debug_label3.Text = "-1";
+            // 
+            // ob_БарыБольшеДонорской
+            // 
+            this.ob_БарыБольшеДонорской.Location = new System.Drawing.Point(337, 95);
+            this.ob_БарыБольшеДонорской.Name = "ob_БарыБольшеДонорской";
+            this.ob_БарыБольшеДонорской.Size = new System.Drawing.Size(158, 19);
+            this.ob_БарыБольшеДонорской.TabIndex = 90;
+            this.ob_БарыБольшеДонорской.Text = "Бары с отклонением";
+            this.ob_БарыБольшеДонорской.UseVisualStyleBackColor = true;
+            this.ob_БарыБольшеДонорской.Click += new System.EventHandler(this.e_БарыБольшеДонорской_Click);
+            // 
+            // ob_КритерийОтклонения
+            // 
+            this.ob_КритерийОтклонения.DecimalPlaces = 3;
+            this.ob_КритерийОтклонения.Location = new System.Drawing.Point(409, 118);
+            this.ob_КритерийОтклонения.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.ob_КритерийОтклонения.Maximum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            0});
+            this.ob_КритерийОтклонения.Minimum = new decimal(new int[] {
+            10000,
+            0,
+            0,
+            -2147483648});
+            this.ob_КритерийОтклонения.Name = "ob_КритерийОтклонения";
+            this.ob_КритерийОтклонения.Size = new System.Drawing.Size(86, 20);
+            this.ob_КритерийОтклонения.TabIndex = 91;
+            this.ob_КритерийОтклонения.Value = new decimal(new int[] {
+            102,
+            0,
+            0,
+            131072});
+            // 
+            // label26
+            // 
+            this.label26.AutoSize = true;
+            this.label26.Location = new System.Drawing.Point(337, 122);
+            this.label26.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label26.Name = "label26";
+            this.label26.Size = new System.Drawing.Size(68, 13);
+            this.label26.TabIndex = 92;
+            this.label26.Text = "Отклонение";
+            // 
+            // сдвинутьФрагментПоВертикалиToolStripMenuItem
+            // 
+            this.сдвинутьФрагментПоВертикалиToolStripMenuItem.Name = "сдвинутьФрагментПоВертикалиToolStripMenuItem";
+            this.сдвинутьФрагментПоВертикалиToolStripMenuItem.Size = new System.Drawing.Size(269, 22);
+            this.сдвинутьФрагментПоВертикалиToolStripMenuItem.Text = "Сдвинуть фрагмент по вертикали";
+            this.сдвинутьФрагментПоВертикалиToolStripMenuItem.Click += new System.EventHandler(this.e_СдвинутьФрагментПоВертикалиToolStripMenuItem_Click);
             // 
             // c_ИсследовательГрафиков
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.Controls.Add(this.label26);
+            this.Controls.Add(this.ob_КритерийОтклонения);
+            this.Controls.Add(this.ob_БарыБольшеДонорской);
+            this.Controls.Add(this.ob_Debug_label3);
+            this.Controls.Add(this.label24);
+            this.Controls.Add(this.label23);
+            this.Controls.Add(this.ob_Сегменты_ЗаменятьБарамиСдвига);
+            this.Controls.Add(this.ob_Debug_label2);
+            this.Controls.Add(this.ob_Debug_label1);
+            this.Controls.Add(this.label20);
+            this.Controls.Add(this.label19);
+            this.Controls.Add(this.ob_СдвинутьСектор);
+            this.Controls.Add(this.ob_ВременныеСдвиги_Поиск);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.ob_ОбъёмБара);
             this.Controls.Add(this.ob_СерияВниз);
             this.Controls.Add(this.ob_СерияВверх);
-            this.Controls.Add(this.label17);
-            this.Controls.Add(this.label16);
-            this.Controls.Add(this.ob_МножительСреднего);
-            this.Controls.Add(this.ob_ПоискГепов_ЧислоДелений);
-            this.Controls.Add(this.label15);
-            this.Controls.Add(this.ob_КритерийГепа);
-            this.Controls.Add(this.ob_ДельтаБольшеСредней);
-            this.Controls.Add(this.ob_ЗаменитьПустыеБары);
-            this.Controls.Add(this.ob_УдалитьОдинокиеБары);
-            this.Controls.Add(this.label14);
-            this.Controls.Add(this.ob_ПараметрДельтаАномальныйБаров);
+            this.Controls.Add(this.ob_ПоискГепов);
             this.Controls.Add(this.ob_ЗаменитьБар);
+            this.Controls.Add(this.button3);
             this.Controls.Add(this.ob_ПредАномальныйБар);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.ob_СледАномальныйБар);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.ob_ЦенаЗакрытияБара);
@@ -990,8 +1180,6 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             this.Controls.Add(this.ob_ПрижатьПоY);
             this.Controls.Add(this.ob_СтатусБар);
             this.Controls.Add(this.ob_Меню);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.ob_МаксКолвоТочек);
             this.Controls.Add(this.ob_ГоризСдвиг);
             this.Controls.Add(this.ob_ВертСдвиг);
             this.Controls.Add(this.label9);
@@ -1013,7 +1201,7 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             this.Margin = new System.Windows.Forms.Padding(2, 1, 2, 1);
             this.MinimumSize = new System.Drawing.Size(1081, 588);
             this.Name = "c_ИсследовательГрафиков";
-            this.Size = new System.Drawing.Size(1081, 588);
+            this.Size = new System.Drawing.Size(1288, 588);
             ((System.ComponentModel.ISupportInitialize)(this.ob_ГодПарам)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ob_МесПарам)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ob_ДнПарам)).EndInit();
@@ -1021,20 +1209,16 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
             ((System.ComponentModel.ISupportInitialize)(this.ob_МинПарам)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ob_ЧасПарам)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ob_ВысотаПарам)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ob_МаксКолвоТочек)).EndInit();
             this.ob_СтатусБар.ResumeLayout(false);
             this.ob_СтатусБар.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ob_ЦенаОтрытияБара)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ob_ЦенаМаксБара)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ob_ЦенаМинБара)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ob_ЦенаЗакрытияБара)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ob_ПараметрДельтаАномальныйБаров)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ob_КритерийГепа)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ob_ПоискГепов_ЧислоДелений)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ob_МножительСреднего)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ob_ОбъёмБара)).EndInit();
             this.ob_Меню.ResumeLayout(false);
             this.ob_Меню.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ob_КритерийОтклонения)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1054,14 +1238,12 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.NumericUpDown ob_СекПарам;
         private System.Windows.Forms.NumericUpDown ob_МинПарам;
         private System.Windows.Forms.NumericUpDown ob_ЧасПарам;
         private System.Windows.Forms.NumericUpDown ob_ВысотаПарам;
         private System.Windows.Forms.Button ob_ВертСдвиг;
         private System.Windows.Forms.Button ob_ГоризСдвиг;
-        private System.Windows.Forms.NumericUpDown ob_МаксКолвоТочек;
         private System.Windows.Forms.StatusStrip ob_СтатусБар;
         private System.Windows.Forms.ToolStripStatusLabel ob_СтатусПрограммы;
         private System.Windows.Forms.CheckBox ob_ПрижатьПоY;
@@ -1079,18 +1261,8 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
         private System.Windows.Forms.Button ob_СледАномальныйБар;
         private System.Windows.Forms.Button ob_ПредАномальныйБар;
         private System.Windows.Forms.Button ob_ЗаменитьБар;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.NumericUpDown ob_ПараметрДельтаАномальныйБаров;
         private System.Windows.Forms.ColorDialog ob_ЦветПалитра;
-        private System.Windows.Forms.Button ob_УдалитьОдинокиеБары;
-        private System.Windows.Forms.Button ob_ЗаменитьПустыеБары;
-        private System.Windows.Forms.Button ob_ДельтаБольшеСредней;
-        private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.NumericUpDown ob_КритерийГепа;
-        private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.NumericUpDown ob_ПоискГепов_ЧислоДелений;
-        private System.Windows.Forms.NumericUpDown ob_МножительСреднего;
-        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button ob_ПоискГепов;
         private System.Windows.Forms.Button ob_СерияВверх;
         private System.Windows.Forms.Button ob_СерияВниз;
         private System.Windows.Forms.Label label18;
@@ -1103,10 +1275,49 @@ namespace АнализГрафиков.c_ИсследовательГрафик�
         private System.Windows.Forms.ToolStripMenuItem видToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem отображатьСвечамиToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem отображатьБарамиToolStripMenuItem;
+        private System.Windows.Forms.Button ob_ВременныеСдвиги_Поиск;
+        private System.Windows.Forms.ToolTip ob_ВсплывающаяПодсказка;
+        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button ob_СдвинутьСектор;
+        private System.Windows.Forms.Label label19;
+        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label ob_Debug_label1;
+        private System.Windows.Forms.Label ob_Debug_label2;
+        private System.Windows.Forms.CheckBox ob_Сегменты_ЗаменятьБарамиСдвига;
+        private System.Windows.Forms.Label label23;
+        private System.Windows.Forms.ToolStripMenuItem невелироватьВерToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem проверкаКотировокToolStripMenuItem;
+        private System.Windows.Forms.Label label24;
+        private System.Windows.Forms.Label ob_Debug_label3;
+        private System.Windows.Forms.ToolStripMenuItem поискдвойныхБаровToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem двойныеБарыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem поискдвойныхБаровToolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem удалитьдвойныеБарыТекущегоСегмантаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem удалитьВседвойныеБарыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem фрагментToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem выбратьНачаломТекущийБарToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem выбратьКонцомТекущийБарToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem сдвинутьФрагментToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem удалитьВсеДвойныеБарыСерииToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem началоФрагментаНачалоСерииToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem конецФрагментаКонецСерииToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem показатьНачалоToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem показатьКонецToolStripMenuItem;
+        private System.Windows.Forms.Button ob_БарыБольшеДонорской;
+        private System.Windows.Forms.NumericUpDown ob_КритерийОтклонения;
+        private System.Windows.Forms.Label label26;
+        private System.Windows.Forms.ToolStripMenuItem количествоОтображаемыхБаровНаСериюToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem удалитьОдинокиеБарыToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem заменитьПустыеБарыБарамиДонорскойToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem цветToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem цветОкантовкиГрафикаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem цветФонаГрафикаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem цветОкантовкиСвечбаровToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem цветПовышенияСвечToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem цветПониженияСвечToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem цветОкантовкиСвечбаровToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem цветФонаГрафикаToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem цветОкантовкиГрафикаToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem перейтиКВыбраннойДатеToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem заменитьВсеАномальныеБарыБарамиДонорскойToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem сдвинутьФрагментПоВертикалиToolStripMenuItem;
     }
 }

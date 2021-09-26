@@ -34,6 +34,8 @@ namespace АнализГрафиков.c_ЛистТочек
 			set { base[index] = (StockPt)value; }
 		}
 
+		
+
 		#endregion
 
 		#region Constructors
